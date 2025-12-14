@@ -1,0 +1,172 @@
+.section {
+    padding: 100px 0;
+    background-color: var(--background);
+    border-top: 1px solid #eee;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--headline-color);
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.subDescription {
+    font-size: 1.1rem;
+    color: var(--headline-color);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.benefitsList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.benefitItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    font-size: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.icon {
+    color: var(--accent);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+/* Audit Card Styling */
+.auditColumn {
+    display: flex;
+    justify-content: center;
+}
+
+.auditCard {
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.auditTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--headline-color);
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.highlight {
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+}
+
+.highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: var(--accent);
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.emailContainer {
+    margin-bottom: 30px;
+}
+
+.emailLabel {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.emailButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--headline-color);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.emailButton:hover {
+    background: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+}
+
+.auditFeatures {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.auditFeatures li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.featureIcon {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .headline {
+        font-size: 2rem;
+    }
+
+    .auditCard {
+        padding: 30px 20px;
+    }
+
+    .auditTitle {
+        font-size: 1.75rem;
+    }
+}

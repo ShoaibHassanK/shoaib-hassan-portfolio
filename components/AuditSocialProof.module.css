@@ -1,0 +1,110 @@
+.section {
+    padding: 100px 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.auditColumn {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+}
+
+.testimonialsColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.headline {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: var(--headline-color);
+}
+
+.text {
+    color: #555555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.benefitList {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.benefitItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    font-size: 1.05rem;
+    color: #555555;
+}
+
+.checkIcon {
+    color: var(--accent);
+    width: 20px;
+    height: 20px;
+}
+
+.emailLink {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    color: #555555;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.testimonialsHeadline {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: var(--headline-color);
+    /* Updated to headline color */
+    font-weight: 700;
+}
+
+.testimonialCard {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--accent);
+}
+
+.testimonialText {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.author {
+    font-weight: 700;
+    color: var(--headline-color);
+    font-size: 1rem;
+}
+
+.authorRole {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

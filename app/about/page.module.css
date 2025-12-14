@@ -1,0 +1,129 @@
+.aboutSection {
+    padding: 150px 0 100px;
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+.pageTitle {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--headline-color);
+    /* Updated to headline color */
+}
+
+.intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 80px;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 30px;
+    border-left: 2px solid #eee;
+}
+
+.timelineItem {
+    position: relative;
+    margin-bottom: 60px;
+    padding-left: 30px;
+}
+
+.timelineMarker {
+    position: absolute;
+    left: -39px;
+    /* Adjust based on border width and padding */
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timelineContent {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: transform 0.3s ease;
+}
+
+.timelineContent:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.year {
+    display: inline-block;
+    background: rgba(0, 102, 204, 0.1);
+    color: var(--accent);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.roleTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: var(--headline-color);
+    /* Updated to headline color */
+}
+
+.company {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.detailBlock {
+    border-left: 3px solid #eee;
+    padding-left: 15px;
+}
+
+.label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #888;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.skills {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 20px;
+    }
+
+    .timelineItem {
+        padding-left: 20px;
+    }
+
+    .timelineMarker {
+        left: -29px;
+    }
+}

@@ -1,0 +1,128 @@
+.heroSection {
+    padding: 160px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: #003366;
+    /* Darker professional blue for visibility */
+    letter-spacing: -0.02em;
+}
+
+.subHeadline {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaGroup {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.primaryCta {
+    background: var(--accent);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px var(--accent-glow);
+}
+
+.primaryCta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px var(--accent-glow);
+}
+
+.secondaryCta {
+    background: transparent;
+    color: var(--foreground);
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.secondaryCta:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: rgba(0, 102, 204, 0.05);
+}
+
+.logoStrip {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background: #fafafa;
+}
+
+.logoTrack {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.logoItem {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.5rem;
+    }
+
+    .ctaGroup {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .primaryCta,
+    .secondaryCta {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
