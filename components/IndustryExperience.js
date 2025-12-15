@@ -17,16 +17,40 @@ const EXPERIENCES = [
         result: "Increase Leads by 15% in 2 months"
     },
     {
-        client: "Nadeem & Umendra Chartered Accountants",
+        client: "Nadeem & Umendra",
         niche: "SAAS",
         image: "/work-nuf-ca.png",
-        result: "Decrease Cost Per Lead by 25% in 3 months & Increase Leads by 35%"
+        result: "Increase Leads by 35% in 2 months"
     },
     {
         client: "Swedish Candy",
         niche: "Ecommerce",
         image: "/work-swedish-candy.png",
         result: "Increased the Sales by 15% in 2 months"
+    },
+    {
+        client: "Maid in the Shade",
+        niche: "Home Services",
+        image: "/work-maid-in-the-shade.png",
+        result: "Increased Leads by 10% month-on-month"
+    },
+    {
+        client: "Freeport Industries",
+        niche: "Construction",
+        image: "/work-freeport-industries.png",
+        result: "Increased Leads by 10% in 2 months"
+    },
+    {
+        client: "Infocus Glass",
+        niche: "Glass Services",
+        image: "/work-infocus-glass.png",
+        result: "Increased Leads by 35% in 3 months"
+    },
+    {
+        client: "Dr Krish Esthetik Studio",
+        niche: "Healthcare",
+        image: "/work-dr-krish.jpg",
+        result: "Increased the leads by 15% in 2 months"
     }
 ];
 
