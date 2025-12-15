@@ -57,6 +57,7 @@
     color: var(--accent);
     width: 20px;
     height: 20px;
+    flex-shrink: 0;
 }
 
 .emailContainer {
@@ -126,7 +127,38 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .container {
         flex-direction: column;
+        gap: 40px;
+    }
+
+    .auditColumn {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .headline {
+        font-size: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .text,
+    .benefitItem {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .emailButton {
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+
+    .testimonialsColumn {
+        width: 100%;
     }
 }

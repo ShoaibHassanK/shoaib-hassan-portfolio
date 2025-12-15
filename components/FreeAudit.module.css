@@ -153,13 +153,30 @@
 }
 
 @media (max-width: 768px) {
+    .section {
+        padding: 60px 0;
+    }
+
     .grid {
         grid-template-columns: 1fr;
         gap: 40px;
     }
 
+    .aboutColumn {
+        width: 100%;
+        padding-right: 0;
+    }
+
     .headline {
         font-size: 2rem;
+        word-wrap: break-word;
+    }
+
+    .description,
+    .subDescription,
+    .benefitItem {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .auditCard {
@@ -168,5 +185,10 @@
 
     .auditTitle {
         font-size: 1.75rem;
+    }
+
+    .emailButton {
+        padding: 14px 20px;
+        font-size: 1rem;
     }
 }
