@@ -26,7 +26,7 @@ export default function AlMamourahCaseStudy() {
                             <span className={styles.client}>Al Mamourah Tailoring</span>
                         </div>
                         <h1 className={styles.title}>
-                            Strategic Quality Correction: Driving Conversion Profitability by Sacrificing 25% of Low-Value Leads
+                            Cut lead costs by 25% in just 3 months
                         </h1>
                         <div className={styles.statsGrid}>
                             <div className={styles.statCard}>

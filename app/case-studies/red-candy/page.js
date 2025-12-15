@@ -26,7 +26,7 @@ export default function RedCandyCaseStudy() {
                             <span className={styles.client}>Red Candy</span>
                         </div>
                         <h1 className={styles.title}>
-                            Strategic Triage and Profit Focus: Turning a 0.98x ROAS Loss into a 2.89x Profit in 60 Days
+                            Turned an unprofitable ad account into a 2.89x ROAS less than 2 months
                         </h1>
                         <div className={styles.statsGrid}>
                             <div className={styles.statCard}>

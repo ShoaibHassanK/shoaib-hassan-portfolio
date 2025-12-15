@@ -8,32 +8,37 @@ const CASE_STUDIES = [
     {
         id: 'bld-marine',
         client: 'BLD Marines',
+        context: 'Marine Equipment Supplier',
         image: '/work-bld-marine.png',
         result: '25% Decrease in Cost Per Conversion & 35% Increase ROAS'
     },
     {
         id: 'nao-medical',
         client: 'Nao Medical',
+        context: 'Healthcare Organization',
         image: '/work-nao-medical.png',
         result: '35% Decrease in Cost Per Conversion in 3 months'
     },
     {
         id: 'red-candy',
         client: 'Red Candy',
+        context: 'Ecommerce Brand',
         image: '/work-red-candy.jpg',
-        result: 'Increase ROAS to 2.89x from 0.98x in 2 months'
+        result: 'Turned an unprofitable ad account into a 2.89x ROAS less than 2 months'
     },
     {
         id: 'guardian-storage',
         client: 'Guardian Storage',
+        context: 'Multi-Location Storage Services',
         image: '/work-guardian.jpg',
-        result: 'Decrease Cost Per Lead by 15% in 2 months & Increase Leads by 25%'
+        result: 'Lowered cost per lead by 15% while increasing lead volume by 25% in less than 45 days'
     },
     {
         id: 'al-mamourah',
         client: 'Al-Mamourah',
+        context: 'Premium Bespoke Tailor',
         image: '/work-al-mamourah.png',
-        result: 'Decreased Lead Cost by 25% in 3 months'
+        result: 'Cut lead costs by 25% in just 3 months'
     }
 ];
 
@@ -41,7 +46,8 @@ export default function FeaturedWork() {
     return (
         <section className={styles.section} id="case-studies">
             <div className="container">
-                <h2 className={styles.headline}>Recent Wins</h2>
+                <h2 className={styles.headline}>Results I’ve Delivered for Businesses Like Yours</h2>
+                <p className={styles.subHeadline}>No matter the industry, the goal stays the same: profitable growth.</p>
 
                 <div className={styles.carouselContainer}>
                     {CASE_STUDIES.map((study) => (
@@ -55,12 +61,19 @@ export default function FeaturedWork() {
                                 />
                             </div>
                             <div className={styles.cardContent}>
-                                <h3 className={styles.clientName}>{study.client}</h3>
+                                <div className={styles.clientHeader}>
+                                    <h3 className={styles.clientName}>{study.client}</h3>
+                                    <span className={styles.clientContext}>{study.context}</span>
+                                </div>
                                 <p className={styles.resultText}>{study.result}</p>
                             </div>
                         </Link>
                     ))}
                 </div>
+
+                <p className={styles.footerLine}>
+                    These results didn’t come from guesswork. They came from clear strategy, clean data, and focused execution.
+                </p>
             </div>
         </section>
     );

@@ -26,7 +26,7 @@ export default function GuardianStorageCaseStudy() {
                             <span className={styles.client}>Guardian Storage</span>
                         </div>
                         <h1 className={styles.title}>
-                            Unlocking Scale: Strategic Bidding & Match Type Expansion Cuts CPL by 15% and Boosts Leads by 25%
+                            Lowered cost per lead by 15% while increasing lead volume by 25% in less than 45 days
                         </h1>
                         <div className={styles.statsGrid}>
                             <div className={styles.statCard}>

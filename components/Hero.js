@@ -22,15 +22,15 @@ export default function Hero() {
         <section className={styles.heroSection}>
             <div className={`container ${styles.content}`}>
                 <h1 className={styles.headline}>
-                    Let's Make Your Google Ads Your Most Profitable Growth Channel
+                    Google Ads Shouldn’t Feel Like a Gamble
                 </h1>
                 <p className={styles.subHeadline}>
-                    My name is Shoaib Hassan with 5 years of agency & corporate Google Ads experience.
-                    I've managed $400K+ across North America, United Kingdom, Australia & MENA for diverse businesses.
+                    Hi, I’m Shoaib Hassan If you’re spending on Google Ads and unsure what’s really working, I can help.
+                    I’ve spent the last 5 years managing Google Ads for businesses ranging from SMEs to large, multinational brands, overseeing $500K+ in ad spend across global markets.
                 </p>
 
                 <div className={styles.ctaGroup}>
-                    <Link href="mailto:shoaib.hb28@gmail.com" className={styles.primaryCta}>
+                    <Link href="/book" className={styles.primaryCta}>
                         Get Your Free Audit
                     </Link>
                     <Link href="/about" className={styles.secondaryCta}>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { Check } from 'lucide-react';
+import { Check, Mail, ArrowRight } from 'lucide-react';
 import styles from './AuditSocialProof.module.css';
 
 const TESTIMONIALS = [
@@ -47,9 +47,14 @@ export default function AuditSocialProof() {
                         </li>
                     </ul>
 
-                    <Link href="mailto:shoaib.hb28@gmail.com" className={styles.emailLink}>
-                        Claim Your Free Audit
-                    </Link>
+                    <div className={styles.emailContainer}>
+                        <p className={styles.emailLabel}>Get in touch directly:</p>
+                        <a href="mailto:shoaib.hb28@gmail.com" className={styles.emailButton}>
+                            <Mail size={20} />
+                            <span>shoaib.hb28@gmail.com</span>
+                            <ArrowRight size={16} />
+                        </a>
+                    </div>
                 </div>
 
                 <div className={styles.testimonialsColumn}>
