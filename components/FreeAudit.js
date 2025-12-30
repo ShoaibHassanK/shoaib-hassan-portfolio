@@ -3,7 +3,7 @@
 import styles from './FreeAudit.module.css';
 import { CheckCircle, ArrowRight, Mail } from 'lucide-react';
 
-export default function FreeAudit() {
+export default function FreeAudit({ customTitle }) {
     return (
         <section className={styles.section}>
             <div className="container">
@@ -42,7 +42,11 @@ export default function FreeAudit() {
                     <div className={styles.auditColumn}>
                         <div className={styles.auditCard}>
                             <h3 className={styles.auditTitle}>
-                                Start growing your business with my <span className={styles.highlight}>free audit.</span>
+                                {customTitle ? (
+                                    <span dangerouslySetInnerHTML={{ __html: customTitle }} />
+                                ) : (
+                                    <>Start growing your business with my <span className={styles.highlight}>free audit.</span></>
+                                )}
                             </h3>
 
                             <div className={styles.emailContainer}>

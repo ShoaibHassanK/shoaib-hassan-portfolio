@@ -1,0 +1,225 @@
+.section {
+    padding: 120px 0 80px;
+    background: var(--background);
+}
+
+.heroContent {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 80px;
+}
+
+.headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: var(--headline-color);
+}
+
+.subHeadline {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.heroText {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.authorityLine {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--headline-color);
+    background: rgba(0, 102, 204, 0.05);
+    /* Light accent background */
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+/* Infrastructure Section */
+.infraSection {
+    padding: 60px 0 100px;
+    background: #fafafa;
+}
+
+.infraContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.infraGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.infraCard {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.infraCard:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.infraTitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--headline-color);
+    margin-bottom: 12px;
+}
+
+.infraValue {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    font-weight: 500;
+    display: block;
+}
+
+.infraCount {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2.5rem;
+    }
+
+    .infraGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .gtmSection {
+        padding: 60px 0 80px;
+    }
+
+    .gtmImageWrapper {
+        height: auto;
+        border-radius: 0;
+    }
+
+    .gtmText {
+        max-width: 100%;
+        padding: 0;
+    }
+}
+
+/* GTM Clients Section */
+.gtmSection {
+    padding: 80px 0 100px;
+    background: var(--background);
+}
+
+.gtmContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Headlines */
+.gtmHeadline {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    text-align: center;
+    color: var(--headline-color);
+}
+
+.gtmSubHeadline {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Scroll Container (Carousel) */
+.gtmScrollContainer {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 5px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 40px;
+}
+
+.gtmScrollContainer::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gtmScrollContainer::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.gtmScrollContainer::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+/* Card Styles */
+.gtmCard {
+    flex: 0 0 350px;
+    /* Fixed width for carousel items */
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.gtmCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.gtmImageWrapper {
+    width: 100%;
+    height: 230px;
+    /* Fixed height for consistency */
+    position: relative;
+    border-bottom: 1px solid #eee;
+    background: #fcfcfc;
+}
+
+.gtmCardContent {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.gtmText {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+}
